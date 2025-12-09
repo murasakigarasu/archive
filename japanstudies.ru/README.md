@@ -4,45 +4,49 @@
 
 ## Архивация
 Архивация проходила при использовании утилиты wpull. Успешность оценивалась при помощи сервиса REPLAY WEBPAGE. Некоторые разделись могут отображаться некорректно, но основная информация (краткие биографические справки об участниках, новости о важных событиях, работы ведущих специалистов) восстановима. 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Holbein-erasmus.jpg/548px-Holbein-erasmus.jpg)
+![](japanstudies.ru/japanstudies_replaywebpage.jpg)
 
 ## Показатели архивируемости
 Сайт получил средний индекс архивируемости – 81% по методике CLEAR с помощью сервиса ArchiveReady
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Holbein-erasmus.jpg/548px-Holbein-erasmus.jpg)
+![](japanstudies.ru/japanstudies_archiveready.jpg)
 
 ## metawarc
 При работе с питоновской библиотекой metawarc использовались следующие команды:
-1.	```{}
+
+1.	```{python}
    metawarc analyze
    ```
-2.  ```{}
-    metawarc metadata --output [указание директории и название получаемого файла] [указание директории и название файла для форматирования]
+
+2.  ```{python}
+    metawarc metadata --output #[указание директории и название получаемого файла] [указание директории и название файла для форматирования]
     ```
-3.	```{}
+
+3.	```{python}
    metawarc index [указание директории и название файла]
    ```
-4. ```{}
+
+4. ```{python}
    metawarc stats -m exts
    ```
 
 ### Результаты
 1.	metawarc analyze
-mimes                                                                      files        size          share
------------------------------------------------------------------------  -------  ----------  -------------
-application/pdf                                                              199   862905204   60.0388
-text/html                                                                  20591   258393542   17.9784
-image/vnd.djvu                                                                11   141598102    9.85204
-image/jpeg                                                                   912   136227328    9.47836
-image/png                                                                     57    24659484    1.71575
-application/zip                                                                6     7738552    0.538429
-application/msword                                                            55     4757285    0.331
-image/gif                                                                     27      857983    0.0596963
-application/javascript                                                         2       38703    0.00269286
-application/vnd.ms-excel                                                       1       31997    0.00222627
-application/vnd.openxmlformats-officedocument.wordprocessingml.document        1       21859    0.00152089
-text/css                                                                       2       15478    0.00107692
-text/plain                                                                     1         522    3.63195e-05
-#total
+|mimes                                                                    |  files |       size |         share|
+|-----------------------------------------------------------------------  |------- | ---------- | -------------|
+|application/pdf                                                          |    199 |  862905204 |  60.0388|
+|text/html                                                                |  20591 |  258393542 |  17.9784|
+|image/vnd.djvu                                                           |     11 | 141598102  |  9.85204|
+|image/jpeg                                                               |    912 |  136227328 |   9.47836|
+|image/png                                                                |     57 |   24659484 |   1.71575|
+|application/zip                                                          |      6 |   7738552  |  0.538429|
+|application/msword                                                       |     55 |    4757285 |   0.331|
+|image/gif                                                                |     27 |     857983 |   0.0596963|
+|application/javascript                                                   |      2 |      38703 |   0.00269286|
+|application/vnd.ms-excel                                                 |      1 |      31997 |   0.00222627|
+|application/vnd.openxmlformats-officedocument.wordprocessingml.document  |      1 |      21859 |   0.00152089|
+|text/css                                                                 |      2 |      15478 |   0.00107692|
+|text/plain                                                               |      1 |        522 |   3.63195e-05|
+|#total
    
 2.	metawarc metadata --output 
 Полученные метаданные записаны в файл соответствующий, также добавленный в репозиторий
@@ -52,10 +56,9 @@ text/plain                                                                     1
 
 4.	stats -m exts 
 Получены результаты о разрешении файлов
-  Group by file extension
-┌────────────┬────────────┬───────┐
+
 │ extension  │ size       │ count │
-├────────────┼────────────┼───────┤
+
 │            │ 10377386   │   257 │
 │ css        │ 11832067   │   142 │
 │ djvu       │ 141598102  │    11 │
@@ -79,5 +82,5 @@ text/plain                                                                     1
 │ xls        │ 31997      │     1 │
 │ xml        │ 194321     │    13 │
 │ zip        │ 7738552    │     6 │
-└────────────┴────────────┴───────┘
+
 
