@@ -13,24 +13,28 @@
 ## metawarc
 При работе с питоновской библиотекой metawarc использовались следующие команды:
 
-1.	```{python, eval = FALSE}
+1.
+   ```{python, eval = FALSE}
    metawarc analyze
    ```
 
-2.  ```{python, eval = FALSE}
+2.
+   ```{python, eval = FALSE}
     metawarc metadata --output #[указание директории и название получаемого файла] [указание директории и название файла для форматирования]
     ```
 
-3.	```{python, eval = FALSE}
+4.
+   ```{python, eval = FALSE}
    metawarc index [указание директории и название файла]
    ```
 
-4. ```{python, eval = FALSE}
+4.
+   ```{python, eval = FALSE}
    metawarc stats -m exts
    ```
 
 ### Результаты
-1.	metawarc analyze
+1.	`metawarc analyze`
    
 | mimes                                                                    |  files |       size |         share |
 | -----------------------------------------------------------------------  | ------- | ---------- | ---------- |
@@ -47,18 +51,17 @@
 | application/vnd.openxmlformats-officedocument.wordprocessingml.document  |      1 |      21859 |   0.00152089 |
 | text/css                                                                 |      2 |      15478 |   0.00107692 |
 | text/plain                                                               |      1 |        522 |   3.63195e-05 |
-| #total
    
-2.	metawarc metadata --output 
+2.	`metawarc metadata --output` 
 Полученные метаданные записаны в файл соответствующий, также добавленный в репозиторий
 
-3.	metawarc index 
+3.	`metawarc index` 
 В результате работы команды был создан файл metawarc.db, который на следующем шаге будет использоваться для команды stats
 
-4.	stats -m exts 
+4.	`stats -m exts` 
 Получены результаты о разрешении файлов
 
-│ extension  │ size       │ count │
+│ extension  │  size      │ count │
 │ ---------- │ ---------- │ ----- │
 │            │ 10377386   │   257 │
 │ css        │ 11832067   │   142 │
@@ -70,7 +73,7 @@
 │ ico        │ 50486      │     2 │
 │ jpeg       │ 8595471    │    27 │
 │ jpg        │ 278117816  │  1055 │
-│ jpg%20alt= │ 48964      │     1 │
+│ jpg%20 │ 48964      │     1 │
 │ js         │ 24673570   │   115 │
 │ me         │ 4264       │     4 │
 │ pdf        │ 1382641499 │   259 │
