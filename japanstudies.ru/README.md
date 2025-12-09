@@ -4,28 +4,28 @@
 
 ## Архивация
 Архивация проходила при использовании утилиты wpull. Успешность оценивалась при помощи сервиса REPLAY WEBPAGE. Некоторые разделись могут отображаться некорректно, но основная информация (краткие биографические справки об участниках, новости о важных событиях, работы ведущих специалистов) восстановима. 
-![](japanstudies.ru/japanstudies_replaywebpage.jpg)
+![](https://github.com/murasakigarasu/archive/blob/main/japanstudies.ru/japanstudies_replaywebpage.jpg)
 
 ## Показатели архивируемости
 Сайт получил средний индекс архивируемости – 81% по методике CLEAR с помощью сервиса ArchiveReady
-![](japanstudies.ru/japanstudies_archiveready.jpg)
+![](https://github.com/murasakigarasu/archive/blob/main/japanstudies.ru/japanstudies_archiveready.jpg)
 
 ## metawarc
 При работе с питоновской библиотекой metawarc использовались следующие команды:
 
-1.	```{python}
+1.	```{python, eval = FALSE}
    metawarc analyze
    ```
 
-2.  ```{python}
+2.  ```{python, eval = FALSE}
     metawarc metadata --output #[указание директории и название получаемого файла] [указание директории и название файла для форматирования]
     ```
 
-3.	```{python}
+3.	```{python, eval = FALSE}
    metawarc index [указание директории и название файла]
    ```
 
-4. ```{python}
+4. ```{python, eval = FALSE}
    metawarc stats -m exts
    ```
 
