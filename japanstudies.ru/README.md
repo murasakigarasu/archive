@@ -31,22 +31,22 @@
 
 ### Результаты
 1.	metawarc analyze
-|mimes                                                                    |  files |       size |         share|
-|-----------------------------------------------------------------------  |------- | ---------- | -------------|
-|application/pdf                                                          |    199 |  862905204 |  60.0388|
-|text/html                                                                |  20591 |  258393542 |  17.9784|
-|image/vnd.djvu                                                           |     11 | 141598102  |  9.85204|
-|image/jpeg                                                               |    912 |  136227328 |   9.47836|
-|image/png                                                                |     57 |   24659484 |   1.71575|
-|application/zip                                                          |      6 |   7738552  |  0.538429|
-|application/msword                                                       |     55 |    4757285 |   0.331|
-|image/gif                                                                |     27 |     857983 |   0.0596963|
-|application/javascript                                                   |      2 |      38703 |   0.00269286|
-|application/vnd.ms-excel                                                 |      1 |      31997 |   0.00222627|
-|application/vnd.openxmlformats-officedocument.wordprocessingml.document  |      1 |      21859 |   0.00152089|
-|text/css                                                                 |      2 |      15478 |   0.00107692|
-|text/plain                                                               |      1 |        522 |   3.63195e-05|
-|#total
+| mimes                                                                    |  files |       size |         share |
+| -----------------------------------------------------------------------  | ------- | ---------- | ---------- |
+| application/pdf                                                          |    199 |  862905204 |  60.0388 |
+| text/html                                                                |  20591 |  258393542 |  17.9784 |
+| image/vnd.djvu                                                           |     11 | 141598102  |  9.85204 |
+| image/jpeg                                                               |    912 |  136227328 |   9.47836 |
+| image/png                                                                |     57 |   24659484 |   1.71575 |
+| application/zip                                                          |      6 |   7738552  |  0.538429 |
+| application/msword                                                       |     55 |    4757285 |   0.331 |
+| image/gif                                                                |     27 |     857983 |   0.0596963 |
+| application/javascript                                                   |      2 |      38703 |   0.00269286 |
+| application/vnd.ms-excel                                                 |      1 |      31997 |   0.00222627 |
+| application/vnd.openxmlformats-officedocument.wordprocessingml.document  |      1 |      21859 |   0.00152089 |
+| text/css                                                                 |      2 |      15478 |   0.00107692 |
+| text/plain                                                               |      1 |        522 |   3.63195e-05 |
+| #total
    
 2.	metawarc metadata --output 
 Полученные метаданные записаны в файл соответствующий, также добавленный в репозиторий
@@ -58,7 +58,7 @@
 Получены результаты о разрешении файлов
 
 │ extension  │ size       │ count │
-
+│ ---------- │ ---------- │ ----- │
 │            │ 10377386   │   257 │
 │ css        │ 11832067   │   142 │
 │ djvu       │ 141598102  │    11 │
